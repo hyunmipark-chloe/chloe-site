@@ -22,6 +22,39 @@ body {
   background-color: #ffc4d3;
 }
 
+
+
+
+
+
+
+ /* nev */
+ .menut {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
+
+ }
+
+ .menut:hover {
+  color: #000000;
+  cursor: pointer;
+ }
+
+  #menuToggle {
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: 36px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+ }
+
+
+
+
+
 section {
     margin-left: 3em;
     margin-right: 8em;
@@ -196,6 +229,7 @@ p{
 	width: auto;
 	left: 2.7em;
 	top: 2.7em;
+  z-index: 1;
  }
 
 
