@@ -22,6 +22,10 @@ body {
   background-color: #ffc4d3;
 }
 
+.workback {
+  background-color: #E9E9E9;
+}
+
 
 
 
@@ -39,19 +43,70 @@ body {
  .menut:hover {
   color: #000000;
   cursor: pointer;
+  font-weight: 800;
  }
 
   #menuToggle {
   display: block;
   position: absolute;
   top: -8px;
-  left: 36px;
+  left: 0;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
  }
 
+ li {
+  width: 200px;
+  border-top: 1px solid #000000;
+  padding-inline-start: 0px;
+  text-decoration: none;
+ }
 
+  ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  text-decoration: none;
+ }
+
+  #menu {
+    position: absolute;
+    width: 330px;
+    height: 900px;
+    /* padding: 50px; */
+    padding-top: 200px;
+    left: 0;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0 0;
+    /* transform: translate(100vw, 0); */
+    /* transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+ }
+
+  #menu li {
+    padding: 5px 0 0 54px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 130%;
+ }
+ 
+  #menu li:hover {
+  color: #000000;
+  cursor: pointer;
+  font-weight: 800;
+  font-style: bold;
+ }
+
+
+
+
+}
 
 
 
@@ -235,7 +290,7 @@ p{
 
 img.logocircle {
     height: 100%;
-    padding-left: 90px;
+    padding-left: 220px;
     position: absolute;
     z-index: 0;
 }
@@ -263,7 +318,6 @@ img.logocircle {
 
 
 @media (min-width: 1250px){
-  
   .three-col {
     position: relative;
     grid-template-columns: repeat(3, 33.33%);
@@ -282,7 +336,7 @@ img.logocircle {
     left: 0em;
     margin: 0;
     padding-top: 1.7em;
-    padding-bottom: 6.5em;
+    padding-bottom: 6.7em;
     border-bottom: 0.5px solid #000000;
     font-size: 36px;
     }
@@ -315,7 +369,7 @@ img.logocircle {
     left: 0em;
     margin: 0;
     padding-top: 0.7em;
-    padding-bottom: 5.3em;
+    padding-bottom: 5.45em;
     /* border-bottom: 0.5px solid #000000; */
     font-size: 36px;
  }
@@ -363,7 +417,7 @@ img.logocircle {
   top: 0;
   left: 0em;
   margin: 0;
-  padding-top: 4.1em;
+  padding-top: 4.6em;
   font-size: 80px;
   max-width: 1440px;
  }
@@ -383,7 +437,19 @@ img.logocircle {
     margin-right: 3em;
 }
 
+.direction {
+    position: absolute;
+    padding: 475px 3em 0 59px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%;
+ }
 
+ .homemain {
+  margin-left: 3em;
+  margin-right: 3em;
+ }
 }
 
 
