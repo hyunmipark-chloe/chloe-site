@@ -84,3 +84,22 @@ function hideSVGPaths() {
 		})
 	})
 }
+
+
+
+
+// Landing screen
+
+function landing() {
+	if (document.querySelector('.landing')) {
+		let landing = document.querySelector('.landing') 
+		if (window.localStorage.getItem('visited') === 'true') {
+			landing.classList.add('visited')
+		} else {
+			window.localStorage.setItem('visited', 'true')
+		}
+	}
+}
+
+landing()
+
