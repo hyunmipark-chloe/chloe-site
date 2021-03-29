@@ -6,3 +6,81 @@ function navToggle(toggleClass) {
 }
 
 navToggle('.toggle')
+
+
+
+
+// Work filtering
+
+function workFilter() {
+	if (document.querySelector('.work-filters') && document.querySelector('.work-grid')) {
+		let filters = document.querySelectorAll('.work-filters > div')
+		let body= document.querySelector('body')
+		for (let i = 0; i < filters.length; i++) {
+			let filter = filters[i]
+			filter.addEventListener('click', () => {
+				let x = filter.className
+				if (body.id === x) {
+					body.id = ''
+				} else {
+					body.id = x
+				}
+			})
+		}
+	}
+}
+workFilter()
+
+
+
+
+
+
+
+// Home page SVG stuff
+
+
+
+// Call the draw function to set it up
+// Pass in a selector to trigger it, and a duration in milliseconds
+draw('.start', 10000)
+
+
+
+// Draw function
+function draw(selector, durationMS) {
+	if (document.querySelector(selector)) {
+		document.querySelector(selector).addEventListener('click', () => {
+			drawSVGPaths(durationMS)
+		})
+	}
+}
+
+// Draw paths to correct length over time delay
+function drawSVGPaths(time) {
+	let paths = $('#paths')
+	$.each(paths, function(i) {
+		let totalLength = this.getTotalLength()
+		$(this).css({
+			'stroke-dashoffset': totalLength,
+			'stroke-dasharray': totalLength + ' ' + totalLength
+		})
+		$(this).animate({
+			'stroke-dashoffset': 0
+		}, {
+			duration: Math.floor(Math.random() * time) + time,
+		})
+	})
+}
+
+// Function to hide the SVG paths again
+function hideSVGPaths() {
+	let paths = $('#paths')
+	$.each( paths, function() {
+		let totalLength = this.getTotalLength()
+		$(this).css({
+			'stroke-dashoffset': totalLength,
+			'stroke-dasharray': totalLength + ' ' + totalLength
+		})
+	})
+}
