@@ -20,7 +20,20 @@ body {
 }
 
 
+.vid {
+  width: 100%;
+  height: auto;
+  border: none;
+  margin: 0;
+}
 
+.play {
+     position: relative;
+    cursor: pointer;
+    margin-left: 26em;
+    margin-right: 26em;
+    z-index: 2;
+}
 
 /*landing*/
 
