@@ -246,7 +246,16 @@ ul {
 
 
 
+a {
+  color: #e7004e;
+  text-decoration: none;
+}
 
+a:hover {
+  color: #e7004e;
+  cursor: pointer;
+  font-weight: 800;
+}
 
 
 section {

@@ -125,44 +125,5 @@ console.log(play)
 console.log(vid)
 
 
-/* EVENTS */
-
-play.addEventListener('click', playPause)
-
-jupiter.addEventListener('mouseenter', jupiterA)
-
-jupiter.addEventListener('mouseleave', jupiterB)
-
-
-/* FUNCTION */
-
-function playPause() {
-
-	if (body.id == 'playing') {
-		vid.pause()
-		planets.pause()
-		body.id = ''
-	}
-
-	else {
-		vid.play()
-		planets.play()
-		body.id = 'playing'
-	}
-
-}
-
-function jupiterA() { 
-	body.style.backgroundColor = '#000000'
-	planets.play()
-
-}
-
-
-function jupiterB() { 
-	body.style.backgroundColor = '#f8250'
-	planets.pause()
-}
-
 
 
