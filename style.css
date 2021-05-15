@@ -389,6 +389,11 @@ img.mail {
   width: 40px;
 }
 
+img.behance {
+    margin-right: 0.5em;
+    padding-bottom: 2px;
+    width: 47px;
+}
 
 p{
   font-weight: 400;
