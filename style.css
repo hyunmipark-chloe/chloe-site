@@ -139,7 +139,7 @@ img {
 footer {
   font-size: 12px;
   font-weight: 200;
-  padding: 2em 0em 2em 3.2em;
+  padding: 2em 0em 2em 4em;
   top: 0;
   position: relative;
   overflow-x: hidden;
@@ -671,6 +671,81 @@ img.logocircle {
 
 /* CONNECT THE DOTS */
 
+
+
+
+.connect-the-dots {
+    fill: none;
+    max-width: 50em;
+    margin: 6em auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  .connect-the-dots circle {
+    fill: black;
+  }
+  .connect-the-dots a,
+  .connect-the-dots a circle {
+    cursor: pointer;
+  }
+  .connect-the-dots line {
+    stroke: black;
+    stroke-width: 0.8px;
+  }
+  .number-label {
+    fill: black;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: sans-serif;
+  }
+  .link-label {
+    fill: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .link-label:hover {
+    fill: #F8C7D3;
+  }
+  .drawn .link-label {
+    opacity: 1;
+  }
+  .dot a {
+    display: none;
+  }
+  .drawn.dot a {
+    display: block;
+  }
+  .dot circle {
+    fill: black;
+    transition: all 0.5s ease;
+  }rgd
+  .dot circle:hover {
+    fill: #F8C7D3;
+  }
+  .drawn #d1,
+  .drawn #d4,
+  .drawn #d15,
+  .drawn #d16,
+  .drawn #d30,
+  .drawn #d32,
+  .drawn #d34,
+  .drawn #d36,
+  .drawn #d38,
+  .drawn #d41,
+  .drawn #d44,
+  .drawn #d45,
+  .drawn #d46,
+  .drawn #d47 {
+    display: none;
+  }
+
+
+
+
 .home-svg {
   display: grid;
   grid-template-columns: auto auto;
@@ -862,10 +937,10 @@ svg.connect {
 
   .direction {
     position: absolute;
-    padding: 475px 3em 0 59px;
+    padding: 740px 3em 0 59px;
     font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 200;foo
+    font-size: 16px;
     line-height: 170%;
   }
 
@@ -874,6 +949,9 @@ svg.connect {
     margin-right: 3em;
   }
 }
+
+
+
 
 
 
