@@ -677,7 +677,7 @@ img.logocircle {
 .connect-the-dots {
     fill: none;
     max-width: 50em;
-    margin: 6em auto;
+    margin: 30em 4em 4em 4em;
     display: block;
     position: relative;
     z-index: 1;
@@ -743,6 +743,16 @@ img.logocircle {
     display: none;
   }
 
+
+  .direction {
+    position: absolute;
+    padding: 15px 3em 0 59px;
+    margin-top: 22em;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 170%;
+  }
 
 
 
@@ -811,6 +821,24 @@ svg.connect {
   grid-gap: 40px;
   margin: 0 4em;
 }
+  .connect-the-dots {
+    fill: none;
+    max-width: 50em;
+    margin: 6em auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+    .direction {
+    position: absolute;
+    padding: 200px 3em 0 59px;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 170%;
+  }
+
 }
 
 
@@ -886,6 +914,7 @@ svg.connect {
     padding-bottom: 1em;
     font-size: 18px;
   }
+
 }
 
 
@@ -920,6 +949,8 @@ svg.connect {
     max-width: 1440px;
   }
 
+
+
 }
 
 @media (min-width: 300px){
@@ -933,15 +964,6 @@ svg.connect {
   section {
     margin-left: 3em;
     margin-right: 3em;
-  }
-
-  .direction {
-    position: absolute;
-    padding: 740px 3em 0 59px;
-    font-style: italic;
-    font-weight: 200;foo
-    font-size: 16px;
-    line-height: 170%;
   }
 
   .homemain {
